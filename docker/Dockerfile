@@ -118,6 +118,9 @@ RUN python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron
 # Pre-built pytorch3d
 RUN pip install pytorch3d -f https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py38_cu102_pyt190/download.html
 
+# Install Metropolis SDK
+RUN pip install git+https://github.com/mapillary/metropolis_sdk.git
+
 #-----------------------
 # Copy working directory
 #-----------------------
